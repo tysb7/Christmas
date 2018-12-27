@@ -60,7 +60,11 @@ exports.main = async(event, context) => {
 这款小程序初衷是为了学习使用腾讯云人脸识别API，定位是为了蹭热度。但是时间、推广和能力的原因没能打造成一个爆款。不过在从中收获了许多东西，源码已经上传至GitHub，欢迎大家一起来维护。
 
 GitHub: [本文项目仓库](https://github.com/tysb7/Christmas)
+
 WeChat: tysb7_
+
 blog: [www.tysb7.cn](https://www.tysb7.cn/)
+
 Email: <terry@qiaokr.com>
+
 SSl: [环洋诚信™](https://www.trustocean.com/)
