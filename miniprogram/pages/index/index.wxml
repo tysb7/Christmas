@@ -1,0 +1,48 @@
+<image animation="{{animation1}}" class='logo' src='/images/2.png' wx:if='{{show || showToFriend}}'></image>
+<canvas class='canvas' id='firstCanvas' style='height:{{canvasHeight}}px;width:{{canvasHeight}}px' canvas-id="firstCanvas" wx:if='{{showHat}}'></canvas>
+<image src='{{filePath}}' class='logo' wx:if='{{showHat}}'></image>
+<view class='bottom1' style="font-family:AppleChancery">Merry Christmas</view>
+<!-- <view class='bottom' style="font-family:AppleChancery"  wx:if='{{showHat}}'>Merry Christmas</view> -->
+<textarea bindtap='like' id='{{num}}' wx:if="{{FriendDate_bar}}" value='{{FriendDate[num].toFriendDate}}' disabled='true' class='info_bar' style="font-family:AppleChancery"></textarea>
+<view class='user_bar' wx:if="{{FriendDate_bar}}">
+  <image animation="{{animationMiddleHeaderItem}}" class='avatarUrl1' bindtap='like' id='{{num}}' src='{{FriendDate[num].userInfo.avatarUrl}}'></image>
+</view>
+<!-- <text wx:if="{{FriendDate_bar}}" class='nickName'>{{FriendDate[num].userInfo.nickName}}</text> -->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showToFriend}}"></view>
+
+<view class="modalDlg" wx:if="{{showToFriend}}">
+  <image class='close' bindtap="closeToFriend" src='/images/3.png'></image>
+  <textarea value='{{data.toFriendDate}}' name="textarea" disabled='true' placeholder="Merry Christmas!" class='inputarea' style="font-family:AppleChancery"></textarea>
+  <image class='bg' src='/images/4.png'></image>
+</view>
+
+<view class="modalDlg" wx:if="{{showModal}}">
+  <image class='close' bindtap="close" src='/images/3.png'></image>
+  <form bindsubmit="bindFormSubmit">
+    <textarea name="textarea" placeholder="Merry Christmas!" class='inputarea' style="font-family:AppleChancery"></textarea>
+    <view class='send_bar'>
+      <button class='send' open-type='share' form-type="submit"></button>
+      <image class='avatarUrl' src='{{userInfo.avatarUrl}}'></image>
+    </view>
+  </form>
+  <image class='bg' src='/images/4.png'></image>
+</view>
+
+<view class="modalDlg" wx:if="{{lab}}">
+  <image class='close' bindtap="closeLab" src='/images/3.png'></image>
+  <textarea value='{{labData}}' name="textarea" disabled='true' placeholder="Merry Christmas!" class='inputarea'></textarea>
+  <image class='bg' src='/images/4.png'></image>
+</view>
+
+<view class='button_bar'>
+  <view class='button_item' wx:if='{{show}}'>
+    <button open-type='getUserInfo' bindgetuserinfo='getuserinfo' class='firnend_btn'></button>
+    <button open-type='getUserInfo' bindgetuserinfo='cropper' class='avatarUrl_btn'></button>
+  </view>
+  <view class='button_item' wx:if='{{showHat}}'>
+    <button bindtap='back' class='share_btn'></button>
+    <button bindtap='save' class='save_btn'></button>
+  </view>
+  <view class='Powered' bindtap='openLab'>Powered by 1510LAB</view>
+</view>

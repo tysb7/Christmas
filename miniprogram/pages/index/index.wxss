@@ -1,0 +1,215 @@
+page{
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.logo{
+  width: 400rpx;
+  height: 400rpx;
+  margin: 50rpx 0 50rpx 0;
+}
+.canvas{
+  position: absolute;
+  left: 750rpx;
+  
+}
+.bottom{
+  width: 400rpx;
+  height: 100rpx;
+  /* background-color: #c1a86a; */
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #fff;
+  margin-top: 0 auto;
+}
+.bottom1{
+  width: 400rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #c1a86a;
+  margin: 0 auto;
+}
+.button_bar{
+  margin: 20rpx 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.Powered{
+  flex: 1;
+  font-size: 20rpx;
+  color: #c1a86a;
+  text-align: center;
+}
+.button_item{
+  margin: 20px 0;
+  display: flex;
+}
+button{
+  flex: 1;
+  margin: 0 20px;
+  width: 100px;
+  display: inline-block;
+}
+
+
+
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 9000;
+    opacity: 0.7;
+}
+ 
+.modalDlg{
+    width: 580rpx;
+    height: 620rpx;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 9999;
+    margin: -370rpx 85rpx;
+    background-color: #fff;
+    border-radius: 36rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close{
+  position: absolute;
+  height: 70rpx;
+  width: 70rpx;
+  right: -35rpx;
+  top: -35rpx;
+}
+.send_bar{
+  /* display: flex; */
+  margin-top: 50rpx;
+}
+.avatarUrl{
+  margin: 0 120rpx 0 60rpx;
+  flex: 1;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.send::after{
+  border: 0;
+}
+.send{
+  flex: 1;
+  margin: 0 60rpx 0 120rpx;
+  width: 70rpx;
+  height: 70rpx;
+  background-color: #fff;
+  background-size: 70rpx;
+  background-repeat: no-repeat;
+  background-image: url(https://7479-ty-cab6d2-1258251528.tcb.qcloud.la/icon/yidan5.png?sign=8ebe1347a58be281ffcfeb89932c9fda&t=1544610750);
+}
+.bg{
+  height: 400rpx;
+   width: 500rpx;
+   position: absolute;
+  margin-top: 50rpx;
+}
+.inputarea{
+  margin-top: 50rpx;
+  height: 400rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  width: 500rpx;
+  background-size: 500rpx;
+  background-repeat: no-repeat;
+  background-image: url(https://7479-ty-cab6d2-1258251528.tcb.qcloud.la/232.png?sign=86c97ea628172c89e9266713ed9cb2eb&t=1544503976);
+  background-color: #fff;
+  color: #c1a86a;
+
+}
+.avatarUrl_btn::after{
+  border: 0
+}
+.avatarUrl_btn{
+  height: 110rpx;
+  width: 110rpx;
+  background-color: #000;
+  background-size: 100rpx;
+  background-repeat: no-repeat;
+  background-image: url(https://7479-ty-cab6d2-1258251528.tcb.qcloud.la/icon/yidan2.png?sign=50b6e6c84a171c9df34135b82876a825&t=1544610434);
+}
+.firnend_btn::after{
+  border: 0
+}
+.firnend_btn{
+  height: 110rpx;
+  width: 110rpx;
+  background-color: #000;
+  background-size: 100rpx;
+  background-repeat: no-repeat;
+  background-image: url(https://7479-ty-cab6d2-1258251528.tcb.qcloud.la/icon/yidan1.png?sign=484d8175b2b0de3dbac6acfad5f36478&t=1544610199);
+}
+.share_btn::after{
+  border: 0;
+  
+}
+.share_btn{
+  height: 110rpx;
+  width: 110rpx;
+  background-color: #000;
+  background-size: 100rpx;
+  background-repeat: no-repeat;
+  background-image: url(https://7479-ty-cab6d2-1258251528.tcb.qcloud.la/icon/yidan7.png?sign=0496953d55e4c85558842a9b736a3154&t=1544611239);
+}
+.save_btn::after{
+  border: 0
+}
+.save_btn{
+  height: 110rpx;
+  width: 110rpx;
+  background-color: #000;
+  background-size: 100rpx;
+  background-repeat: no-repeat;
+  background-image: url(https://7479-ty-cab6d2-1258251528.tcb.qcloud.la/icon/yidan4.png?sign=01671de2584ab20e3b3d66735758bb45&t=1544610625);
+}
+
+.info_bar{
+  height: 200rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  width: 500rpx;
+  background-color: #000;
+  color: #c1a86a;
+}
+.nickName{
+  font-size: 30rpx;
+  color: #c1a86a;
+  line-height: 50rpx;
+}
+.avatarUrl1{
+  flex: 1;
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 50rpx;
+  border-radius: 50%;
+}
+.like{
+  flex: 1;
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 50rpx;
+}
+.user_bar{
+  margin-top: 50rpx;
+  display: flex;
+}

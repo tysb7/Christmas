@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cutInside/cutInside"
+    
+  ],
+  "window": {
+    "backgroundColor": "#000",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Merry Christmas",
+    "navigationBarTextStyle": "white",
+    "disableScroll":true
+  }
+}
